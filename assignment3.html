@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--xmlns="http://www.w3.org/1999/xhtml">-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JavaScript &amp; jQuery - Chapter 2: Basic JavaScript Instructions - Example</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/bootswatch_theme_pulse.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="collapse navbar-collapse" id="citwNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="assignmentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Assignments
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="assignmentDropdown">
+                        <a class="dropdown-item" href="./assignment2.html">Week 3 - Exercise 2</a>
+                        <a class="dropdown-item" href="./assignment3.html">Week 4 - Exercise 3</a>
+                        <a class="dropdown-item" href="./assignment5.html">Week 7 - Exercise 5</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Team Project</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <h1>Elderwood Academy</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <div id="greeting" class="message">Hello!</div>
+                <table>
+                    <tr class="table-active">
+                        <td>Custom letters: </td>
+                        <td id="userSign" class="text-primary"></td>
+                    </tr>
+                    <tr>
+                        <td>Cost Per Tile: </td>
+                        <td id="costPerTile"></td>
+                    </tr>
+                    <tr>
+                        <td>Total wooden tiles: </td>
+                        <td id="tiles">$</td>
+                    </tr>
+                    <tr class="table-info">
+                        <td>Subtotal: </td>
+                        <td id="subTotal"></td>
+                    </tr>
+                    <tr>
+                        <td>Shipping: </td>
+                        <td id="shipping"></td>
+                    </tr>
+                    <tr class="table-info">
+                        <td>Grand total: </td>
+                        <td id="grandTotal"></td>
+                    </tr>
+                </table>
+                <a href="#" class="action">Pay Now</a>
+                <img src="./images/paypalLogo.jpg" alt="Paypal Logo" height="42" width="42"/>
+            </div>
+            <div class="col-lg-4 ml-auto">
+                <img src="./images/woodenTiles.jpg" alt="Wooden Tiles with Letters Printed On Them" height="275" width="300"/>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/jquery_3.3.1.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/assignment3.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--xmlns="http://www.w3.org/1999/xhtml">-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CITW 165 - Anthony Machniak</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/bootswatch_theme_pulse.css">
+</head>
+
+<body>
+    <!--Start of Navbar at top-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="collapse navbar-collapse" id="citwNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="assignmentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Assignments
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="assignmentDropdown">
+                        <a class="dropdown-item" href="./assignment2.html">Week 3 - Exercise 2</a>
+                        <a class="dropdown-item" href="./assignment3.html">Week 4 - Exercise 3</a>
+                        <a class="dropdown-item" href="./assignment5.html">Week 7 - Exercise 5</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Team Project</a>
+                        <a class="dropdown-item" href="./template.html">Team Template</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--End of Navbar at top-->
+
+    <p>All of these features can be found/copied from https://bootswatch.com/pulse/. If you "inspect" these elements in a browser, you can see the html elements that give them their color. Below I've copied and offered a slightly more detailed explanation of commonly used elements. Please feel free to contact me if you have questions on how to do something.</p>
+
+    <div>Bootstrap divides the page into 12 segments. The class "col-lg-#" will tell you how much of the page the item should take up. The number can be any whole number between 1 and 12. Examples are below.</div>
+    <div class="row">
+        <div class="col-lg-12">
+            <table class="table table-hover">
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Full Row - Class="col-lg-12"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <table class="table table-hover">
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Half of Page - Class="col-lg-6"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <table class="table table-hover">
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Third of Page - Class="col-lg-4"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-1">
+            <table class="table table-hover">
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Small - Class="col-lg-1"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <p>These are built in colors from the bootswatch theme. To change color, use "-primary", "-secondary" etc</p>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <p>Examples of cards. You can use these if you need/want text to be in a textbox and have a similar color theme.</p>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Assignments</h4>
+                    <p class="card-text">Use the navbar above to find links to this semesters' work.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Version Control</h4>
+                    <p class="card-text">Code is maintained in version control using <a style="color:darkblue" href="https://github.com/anthonymachniak/CITW165_GroupProject">GitHub</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card border-primary mb-3" style="max-width: 20rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Bootstrap</h4>
+                    <p class="card-text">This site uses css and javascript from <a href="https://getbootstrap.com/">Bootstrap</a>. Theme taken from <a href="https://bootswatch.com/pulse/">Bootswatch</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery_3.3.1.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
