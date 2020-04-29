@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
- <!--xmlns="http://www.w3.org/1999/xhtml">-->
+<!--xmlns="http://www.w3.org/1999/xhtml">-->
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -47,20 +47,73 @@
     </nav>
     <!--End of Navbar at top-->
 
-    <div class="jumbotron">
-        <h1 class="display-3">Welcome!</h1>
-        <p class="lead">This website is to display Team 3's work for CITW 165 - Spring Semester 2020.</p>
-        <hr class="my-4">
-        <p>Professor: Dennis Pipper</p>
-        <p>Team Members:</p>
-        <ul>Dane Farquhar</ul>
-        <ul>Nicholas Harrison</ul>
-        <ul>Anthony Machniak</ul>
-        <ul>Jacob Simons</ul>
-        <ul>Tristan Streeter</ul>
-        <ul>Amber Wells</ul>
+    <p>All of these features can be found/copied from https://bootswatch.com/pulse/. If you "inspect" these elements in a browser, you can see the html elements that give them their color. Below I've copied and offered a slightly more detailed explanation of commonly used elements. Please feel free to contact me if you have questions on how to do something.</p>
+
+    <div>Bootstrap divides the page into 12 segments. The class "col-lg-#" will tell you how much of the page the item should take up. The number can be any whole number between 1 and 12. Examples are below.</div>
+    <div class="row">
+        <div class="col-lg-12">
+            <table class="table table-hover">
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Full Row - Class="col-lg-12"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
+    <div class="row">
+        <div class="col-lg-6">
+            <table class="table table-hover">
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Half of Page - Class="col-lg-6"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <table class="table table-hover">
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Third of Page - Class="col-lg-4"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-1">
+            <table class="table table-hover">
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Small - Class="col-lg-1"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <p>These are built in colors from the bootswatch theme. To change color, use "-primary", "-secondary" etc</p>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <p>Examples of cards. You can use these if you need/want text to be in a textbox and have a similar color theme.</p>
     <div class="row">
         <div class="col-lg-4">
             <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
@@ -93,5 +146,6 @@
     <script src="./js/jquery_3.3.1.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/managing_mental_health.js"></script>
 </body>
 </html>

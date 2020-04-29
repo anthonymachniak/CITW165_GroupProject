@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
- <!--xmlns="http://www.w3.org/1999/xhtml">-->
+<!--xmlns="http://www.w3.org/1999/xhtml">-->
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -47,51 +47,43 @@
     </nav>
     <!--End of Navbar at top-->
 
-    <div class="jumbotron">
-        <h1 class="display-3">Welcome!</h1>
-        <p class="lead">This website is to display Team 3's work for CITW 165 - Spring Semester 2020.</p>
-        <hr class="my-4">
-        <p>Professor: Dennis Pipper</p>
-        <p>Team Members:</p>
-        <ul>Dane Farquhar</ul>
-        <ul>Nicholas Harrison</ul>
-        <ul>Anthony Machniak</ul>
-        <ul>Jacob Simons</ul>
-        <ul>Tristan Streeter</ul>
-        <ul>Amber Wells</ul>
-    </div>
+    <br />
 
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+    <div class="text-center">
+        <div class="col-lg-5">
+            <div class="card text-black bg-warning mb-3">
                 <div class="card-body">
-                    <h4 class="card-title">Assignments</h4>
-                    <p class="card-text">Use the navbar above to find links to this semesters' work.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4">
-            <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
-                <div class="card-body">
-                    <h4 class="card-title">Version Control</h4>
-                    <p class="card-text">Code is maintained in version control using <a style="color:darkblue" href="https://github.com/anthonymachniak/CITW165_GroupProject">GitHub</a>.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4">
-            <div class="card border-primary mb-3" style="max-width: 20rem;">
-                <div class="card-body">
-                    <h4 class="card-title">Bootstrap</h4>
-                    <p class="card-text">This site uses css and javascript from <a href="https://getbootstrap.com/">Bootstrap</a>. Theme taken from <a href="https://bootswatch.com/pulse/">Bootswatch</a>.</p>
+                    <h4 class="card-title">Donations</h4>
+                    <p class="card-text">Please provide us with a donation to help support mental health professionals and policy throughout the Lansing area.</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="donationForm" class="row text-center">
+        <form id="donation" class="col-lg-5">
+            <input type="text" id="firstName" placeholder="First Name" />
+            <input type="text" id="lastName" placeholder="Last Name" />
+            <input type="text" id="email" placeholder="Email" />
+            <br />
+            <br />
+            <input type="text" id="donationAmount" placeholder="Amount" class="col-lg-5" />
+            <br />
+            <br />
+            <input id="submitDonation" type="submit" class="btn btn-success col-lg-5" value="Donate" />
+        </form>
+    </div>
+
+    <br />
+
+    <div id="successMessage"></div>
+
+    <!--Make a success message after the form submission is completed-->
+
 
     <script src="./js/jquery_3.3.1.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/donations.js"></script>
 </body>
 </html>
